@@ -8,6 +8,7 @@ function addItem (item){
   basket.push(item);
   return true;
 }
+
 console.log('testing addItem:', addItem('Life cereal'));
 console.log('testing addItem:', addItem('peanut butter'));
 console.log('testing addItem:', addItem('coffee'));
@@ -19,7 +20,6 @@ console.log(basket);
 function listItems(){
   for (let i=0; i<basket.length; i++) {
     console.log('Cart contents:', basket[i]);
-    console.log('test');
   }
 }
 
@@ -30,5 +30,3 @@ function empty(item) {
 }
 empty();
 console.log(basket);
-
-let const maxItems = 5;
