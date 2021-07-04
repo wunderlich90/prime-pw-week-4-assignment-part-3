@@ -17,7 +17,18 @@ console.log('testing addItem:', addItem('bread'));
 console.log(basket);
 
 function listItems(){
-  for (let content of basket) {
-    console.log('Contents of Basket:', content);
+  for (let i=0; i<basket.length; i++) {
+    console.log('Cart contents:', basket[i]);
+    console.log('test');
   }
 }
+
+listItems();
+
+function empty(item) {
+  basket.length = 0;
+}
+empty();
+console.log(basket);
+
+let const maxItems = 5;
